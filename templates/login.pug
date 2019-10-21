@@ -1,8 +1,11 @@
 extends layout
 
+block append assets
+  script(src="/script.js")
+
 block content
 
-  form(action="/login" method="post")
+  form#loginForm(action="/login" method="post")
     h1 Please sign in
 
     .form-group
